@@ -20,7 +20,11 @@ public class MainActivity extends AppCompatActivity {
 
     @Click(R.id.acBtn_constraintLayout)
     void acBtn_constraintLayoutClick() {
-//        _000_ConstraintLayoutActivity_.intent(_activity).start();
+        _000_ConstraintLayoutActivity_.intent(_activity).start();
+    }
+
+    @Click(R.id.acBtn_rippleView)
+    void acBtn_rippleViewClick() {
         _001_CustomUIRippleViewActivity_.intent(_activity).start();
     }
 }

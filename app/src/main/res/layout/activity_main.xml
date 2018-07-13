@@ -15,4 +15,13 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/acBtn_rippleView"
+        app:layout_constraintTop_toBottomOf="@+id/acBtn_constraintLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="自定义 RippleView"
+        android:textAllCaps="false"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
 </android.support.constraint.ConstraintLayout>
