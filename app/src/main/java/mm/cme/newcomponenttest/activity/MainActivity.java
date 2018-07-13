@@ -27,4 +27,9 @@ public class MainActivity extends AppCompatActivity {
     void acBtn_rippleViewClick() {
         _001_CustomUIRippleViewActivity_.intent(_activity).start();
     }
+
+    @Click(R.id.acBtn_nestedScrollView)
+    void acBtn_nestedScrollViewClick() {
+        _002_NestedScrollViewActivity_.intent(_activity).start();
+    }
 }

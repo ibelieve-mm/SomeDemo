@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_collapseParallaxMultiplier="0.9">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/ctl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:contentScrim="?attr/colorAccent"
+            app:expandedTitleMarginEnd="15dp"
+            app:expandedTitleMarginStart="15dp"
+            app:layout_collapseMode="pin"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <!--
+            layout_scrollFlags 有如下几种选项：
+                scroll ：想要 CollapsingToolbarLayout 滚出屏幕，必须设置该值，否则 CollapsingToolbarLayout 将被固定在屏幕顶部
+                exitUntilCollapsed ：上滑，折叠在屏幕顶端，继续上滑，CollapsingToolbarLayout 下面的 View 才会退出屏幕；
+                    下滑，CollapsingToolbarLayout 下面的 View 逐渐进入屏幕，继续，CollapsingToolbarLayout 才会展开；
+                enterAlwaysCollapsed ：与 exitUntilCollapsed 类似，但是折叠后不会固定在屏幕顶部；
+                snap ：与 enterAlwaysCollapsed 的最终效果一样，但是没有渐变过程，上滑，逐渐滚出屏幕，中间没有停留，下滑，逐渐中展开，中间没有停留；
+                enterAlways ：上滑，与 enterAlwaysCollapsed 一样的效果，下滑，先展开 CollapsingToolbarLayout，之后其下面的 View 才会进入屏幕；
+
+                "scroll|enterAlwaysCollapsed"
+                "scroll|snap"
+                "scroll|enterAlways"
+                "scroll|exitUntilCollapsed"
+            -->
+
+            <!--
+                contentScrim ：折叠后，Toolbar 的背景颜色
+            -->
+
+            <!--
+                展开时，标题的位置由下面4个属性决定：
+                    app:expandedTitleMarginStart
+                    app:expandedTitleMargin
+                    app:expandedTitleMarginBottom
+                    app:expandedTitleMarginEnd
+            -->
+
+
+            <ImageView
+                android:id="@+id/iv_cover"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_launcher_background" />
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <!--
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                通知布局中包含滑动组件，很重要！
+        -->
+
+    <!--<android.support.v4.widget.SwipeRefreshLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--app:layout_behavior="@string/appbar_scrolling_view_behavior"-->
+        <!--android:layout_height="match_parent">-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4" />
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    <!--</android.support.v4.widget.SwipeRefreshLayout>-->
+    </android.support.v4.widget.NestedScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:src="@android:drawable/sym_action_email"
+        app:layout_anchor="@id/appBar"
+        app:layout_anchorGravity="bottom|right|end" />
+</android.support.design.widget.CoordinatorLayout>
