@@ -1,7 +1,7 @@
 package mm.cme.newcomponenttest.activity;
 
 /**
- * Descriptions：ConstraintLayout 的使用方式
+ * Descriptions：ConstraintLayout 的使用
  * <p>
  * Author：ChenME
  * Date：2018/7/11
