@@ -21,5 +21,6 @@
         <activity android:name=".activity._001_CustomUIRippleViewActivity_" />
         <activity android:name=".activity._002_CollapsingToolbarLayout_"
             android:theme="@style/NoActionBarTheme"/>
+        <activity android:name=".activity._003_TextInputLayoutActivity_"/>
     </application>
 </manifest>

@@ -32,4 +32,8 @@ public class MainActivity extends AppCompatActivity {
     void acBtn_collapsingToolbarLayoutClick() {
         _002_CollapsingToolbarLayout_.intent(_activity).start();
     }
+    @Click(R.id.acBtn_textInputLayout)
+    void acBtn_textInputLayoutClick() {
+        _003_TextInputLayoutActivity_.intent(_activity).start();
+    }
 }

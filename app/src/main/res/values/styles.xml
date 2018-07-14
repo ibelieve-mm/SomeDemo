@@ -8,14 +8,27 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <style name="NoActionBarTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
-        <!--<item name="android:windowBackground">@android:color/transparent</item>-->
+    <!-- 隐藏 title -->
+    <style name="NoActionBarTheme" parent="AppTheme">
         <item name="windowActionBar">false</item>
         <item name="android:windowActionBar">false</item>
         <item name="android:windowNoTitle">true</item>
         <item name="windowNoTitle">true</item>
+    </style>
+
+    <!-- TextInputLayout 错误 提示的样式 -->
+    <style name="errorAppearance" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@android:color/holo_orange_light</item>
+    </style>
+    <!-- TextInputLayout hint 提示的样式 -->
+    <style name="hintAppearance" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@android:color/holo_purple</item>
+    </style>
+    <!-- TextInputLayout 字数统计 提示的样式 -->
+    <style name="counterAppearance" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@android:color/holo_blue_light</item>
     </style>
 </resources>
