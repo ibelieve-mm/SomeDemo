@@ -61,6 +61,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
                 app:layout_collapseMode="pin"/>
+            <!--
+                 app:layout_collapseMode="pin"
+                    Toolbar 的折叠模式，有3种取值：
+                        pin ：固定模式，在折叠的时候最后固定在顶端;
+                        parallax ：视差模式，在折叠的时候会有个视差折叠的效果；
+                        none ：随着滑动滚出屏幕；
+            -->
         </android.support.design.widget.CollapsingToolbarLayout>
     </android.support.design.widget.AppBarLayout>
 
