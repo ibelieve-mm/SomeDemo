@@ -25,7 +25,7 @@ public class AppBaseActivity extends AppCompatActivity {
         if (actionBar != null) {
             actionBar.setHomeButtonEnabled(true);
             actionBar.setDisplayHomeAsUpEnabled(true);
-            actionBar.setHomeAsUpIndicator(android.R.drawable.ic_menu_close_clear_cancel);
+            actionBar.setHomeAsUpIndicator(android.R.drawable.arrow_up_float);
         }
     }
 

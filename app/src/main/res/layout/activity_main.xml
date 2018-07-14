@@ -29,10 +29,10 @@
             app:layout_constraintTop_toBottomOf="@+id/acBtn_constraintLayout" />
 
         <android.support.v7.widget.AppCompatButton
-            android:id="@+id/acBtn_nestedScrollView"
+            android:id="@+id/acBtn_collapsingToolbarLayout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="NestedScrollView 的使用"
+            android:text="可折叠的MD风格ToolbarLayout"
             android:textAllCaps="false"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/acBtn_rippleView" />

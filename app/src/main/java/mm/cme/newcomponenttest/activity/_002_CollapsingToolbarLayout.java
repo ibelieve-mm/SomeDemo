@@ -17,10 +17,10 @@ import org.androidannotations.annotations.EActivity;
 
 import mm.cme.newcomponenttest.R;
 
-@EActivity(R.layout.activity_002_nested_scroll_view)
-public class _002_NestedScrollViewActivity extends AppCompatActivity {
+@EActivity(R.layout.activity_002_collapsing_toolbar_layout)
+public class _002_CollapsingToolbarLayout extends AppCompatActivity {
 
-    private _002_NestedScrollViewActivity _activity;
+    private _002_CollapsingToolbarLayout _activity;
 
     @AfterViews
     void onPageStart() {
@@ -33,6 +33,6 @@ public class _002_NestedScrollViewActivity extends AppCompatActivity {
 
         //设置工具栏标题
         CollapsingToolbarLayout collapsingToolbar =  findViewById(R.id.ctl);
-        collapsingToolbar.setTitle("cheeseName");
+        collapsingToolbar.setTitle("可折叠的MD风格ToolbarLayout");
     }
 }

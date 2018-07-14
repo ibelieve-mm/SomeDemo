@@ -19,7 +19,7 @@
         <activity android:name=".activity.AppBaseActivity_" />
         <activity android:name=".activity._000_ConstraintLayoutActivity_" />
         <activity android:name=".activity._001_CustomUIRippleViewActivity_" />
-        <activity android:name=".activity._002_NestedScrollViewActivity_"
+        <activity android:name=".activity._002_CollapsingToolbarLayout_"
             android:theme="@style/NoActionBarTheme"/>
     </application>
 </manifest>
