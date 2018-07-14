@@ -36,4 +36,8 @@ public class MainActivity extends AppCompatActivity {
     void acBtn_textInputLayoutClick() {
         _003_TextInputLayoutActivity_.intent(_activity).start();
     }
+    @Click(R.id.acBtn_bottomSheetBehavior)
+    void acBtn_bottomSheetBehaviorClick() {
+        _004_BottomSheetBehaviorActivity_.intent(_activity).start();
+    }
 }

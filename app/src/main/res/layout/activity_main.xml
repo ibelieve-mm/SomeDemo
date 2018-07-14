@@ -45,5 +45,14 @@
             android:textAllCaps="false"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/acBtn_collapsingToolbarLayout" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/acBtn_bottomSheetBehavior"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BottomSheetBehavior 的使用"
+            android:textAllCaps="false"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/acBtn_textInputLayout" />
     </android.support.constraint.ConstraintLayout>
 </android.support.v4.widget.NestedScrollView>
