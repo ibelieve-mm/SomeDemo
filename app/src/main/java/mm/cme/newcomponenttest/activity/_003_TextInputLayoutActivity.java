@@ -51,7 +51,6 @@ public class _003_TextInputLayoutActivity extends AppBaseActivity {
         et_account.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-
             }
 
             @Override
@@ -67,7 +66,6 @@ public class _003_TextInputLayoutActivity extends AppBaseActivity {
 
             @Override
             public void afterTextChanged(Editable s) {
-
             }
         });
     }

@@ -19,7 +19,6 @@
             app:contentScrim="?attr/colorAccent"
             app:expandedTitleMarginEnd="15dp"
             app:expandedTitleMarginStart="15dp"
-            app:layout_collapseMode="pin"
             app:layout_scrollFlags="scroll|exitUntilCollapsed">
 
             <!--
@@ -61,8 +60,7 @@
                 android:id="@+id/toolbar"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
-                app:layout_collapseMode="pin"
-                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+                app:layout_collapseMode="pin"/>
         </android.support.design.widget.CollapsingToolbarLayout>
     </android.support.design.widget.AppBarLayout>
 
